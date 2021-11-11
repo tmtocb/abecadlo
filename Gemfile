@@ -18,4 +18,5 @@ end
 
 group :development, :test do
   gem 'bundler-audit'
+  gem 'rspec-rails', '~> 5.0.0'
 end
