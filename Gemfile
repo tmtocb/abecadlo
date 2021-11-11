@@ -8,6 +8,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'webpacker', '~> 5.0'
 
 group :development do
   gem 'listen', '~> 3.2'
