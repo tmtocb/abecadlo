@@ -1,10 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (6.0.4.1)
-      actionpack (= 6.0.4.1)
-      nio4r (~> 2.0)
-      websocket-driver (>= 0.6.1)
     actionmailbox (6.0.4.1)
       actionpack (= 6.0.4.1)
       activejob (= 6.0.4.1)
@@ -113,21 +109,6 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (6.0.4.1)
-      actioncable (= 6.0.4.1)
-      actionmailbox (= 6.0.4.1)
-      actionmailer (= 6.0.4.1)
-      actionpack (= 6.0.4.1)
-      actiontext (= 6.0.4.1)
-      actionview (= 6.0.4.1)
-      activejob (= 6.0.4.1)
-      activemodel (= 6.0.4.1)
-      activerecord (= 6.0.4.1)
-      activestorage (= 6.0.4.1)
-      activesupport (= 6.0.4.1)
-      bundler (>= 1.3.0)
-      railties (= 6.0.4.1)
-      sprockets-rails (>= 2.0.0)
     rails-controller-testing (1.0.5)
       actionpack (>= 5.0.1.rc1)
       actionview (>= 5.0.1.rc1)
@@ -198,15 +179,22 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket-driver (0.7.5)
-      websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.5)
     zeitwerk (2.5.1)
 
 PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
+  actionmailbox (= 6.0.4.1)
+  actionmailer (= 6.0.4.1)
+  actionpack (= 6.0.4.1)
+  actiontext (= 6.0.4.1)
+  actionview (= 6.0.4.1)
+  activejob (= 6.0.4.1)
+  activemodel (= 6.0.4.1)
+  activerecord (= 6.0.4.1)
+  activestorage (= 6.0.4.1)
+  activesupport (= 6.0.4.1)
   better_errors
   binding_of_caller
   bootsnap (>= 1.4.2)
@@ -217,13 +205,14 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   pry (~> 0.13.1)
   puma (~> 4.1)
-  rails (~> 6.0.4, >= 6.0.4.1)
   rails-controller-testing
+  railties (= 6.0.4.1)
   rspec-rails (~> 5.0.0)
   sass-rails (>= 6)
   shoulda-matchers (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
+  sprockets-rails
   webpacker (~> 5.0)
 
 RUBY VERSION
