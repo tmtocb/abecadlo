@@ -1,0 +1,51 @@
+---
+- - :permit
+  - MIT
+  - &1
+    :who:
+    :why:
+    :versions: []
+    :when: 2021-11-12 18:36:44.035987000 Z
+- - :permit
+  - ISC
+  - *1
+- - :permit
+  - Apache 2.0
+  - *1
+- - :permit
+  - Simplified BSD
+  - *1
+- - :permit
+  - New BSD
+  - *1
+- - :permit
+  - CC0-1.0
+  - &2
+    :who:
+    :why:
+    :versions: []
+    :when: 2021-11-12 18:38:45.157603000 Z
+- - :permit
+  - "(MIT OR Apache-2.0)"
+  - *2
+- - :permit
+  - Brakeman Public Use License
+  - *2
+- - :permit
+  - GPL-3.0+
+  - *2
+- - :permit
+  - CC-BY-4.0
+  - *2
+- - :permit
+  - "(BSD-3-Clause OR GPL-2.0)"
+  - *2
+- - :permit
+  - "(MIT AND Zlib)"
+  - *2
+- - :permit
+  - "(WTFPL OR MIT)"
+  - *2
+- - :permit
+  - "(MIT AND BSD-3-Clause)"
+  - *2
