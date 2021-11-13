@@ -23,6 +23,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'webpacker', '~> 5.0'
 
 group :development do
+  gem 'bullet'
   gem 'listen', '~> 3.2'
   gem 'pry', '~> 0.13.1'
   gem 'spring'
