@@ -5,5 +5,10 @@ RSpec.describe Player do
     it { should have_db_column(:citizenship).of_type(:string).with_options(null: false) }
     it { should have_db_column(:date_of_birth).of_type(:datetime).with_options(null: false) }
     it { should have_db_column(:city_of_birth).of_type(:string).with_options(null: false) }
+    it { should have_db_index(:country_id) }
+  end
+
+  describe 'relations' do
+    it { should belong_to(:country) }
   end
 end
