@@ -31,8 +31,8 @@ jobs:
         env:
           DATABASE_URL: postgres://postgres:@localhost:5432/test
           RAILS_ENV: test
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
-          POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
         run: |
           sudo apt-get -yqq install libpq-dev
           bundle exec rails db:prepare
