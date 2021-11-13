@@ -5,5 +5,6 @@ RSpec.describe Country do
 
   describe 'relations' do
     it { should have_many(:players) }
+    it { should have_many(:leagues) }
   end
 end
