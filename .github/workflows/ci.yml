@@ -7,6 +7,8 @@ jobs:
     services:
       postgres:
         image: postgres:11
+        env:
+          POSTGRES_USER: postgres
         ports: ['5432:5432']
         options:
           --health-cmd pg_isready
@@ -35,7 +37,6 @@ jobs:
         env:
           DATABASE_URL: postgres://postgres:@localhost:5432/test
           RAILS_ENV: test
-          POSTGRES_USER: postgres
         run: |
           sudo apt-get -yqq install libpq-dev
           bundle exec rails db:prepare
