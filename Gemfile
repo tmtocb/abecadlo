@@ -21,6 +21,7 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'webpacker', '~> 5.0'
+gem 'devise'
 
 group :development do
   gem 'bullet'
